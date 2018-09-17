@@ -1,4 +1,4 @@
-/*jshint node:true */
+/* jshint node:true */
 module.exports = function ( grunt ) {
 
 	'use strict';
@@ -11,30 +11,30 @@ module.exports = function ( grunt ) {
 		jshint: {
 			options: {
 				// Enforcing
-				"bitwise": true,
-				"curly": true,
-				"eqeqeq": true,
-				"freeze": true,
-				"latedef": "nofunc",
-				"noarg": true,
-				"nonew": true,
-				"undef": true,
-				"unused": true,
-				"strict": true,
+				bitwise: true,
+				curly: true,
+				eqeqeq: true,
+				freeze: true,
+				latedef: 'nofunc',
+				noarg: true,
+				nonew: true,
+				undef: true,
+				unused: true,
+				strict: true,
 
 				// ECMAScript version
-				"esversion": 3,
+				esversion: 3,
 
 				// Environment
-				"browser": true,
-				"jquery": true,
+				browser: true,
+				jquery: true,
 
 				// map of global variables, with keys as names and a boolean value to determine if they are assignable
-				"globals": {
-					"mediaWiki": false
+				globals: {
+					mediaWiki: false
 				},
 
-				"ignores": []
+				ignores: []
 			},
 			all: [
 				'**/*.js',

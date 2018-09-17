@@ -3,7 +3,7 @@
  * Aliases for the ExtensionManager extension
  *
  * @copyright (C) 2016 - 2017, Stephan Gambke
- * @license   GNU General Public License, version 2 (or any later version)
+ * @license       GNU General Public License, version 2 (or any later version)
  *
  * This software is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -19,7 +19,7 @@
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  *
  * @file
- * @ingroup ExtensionManager
+ * @ingroup       ExtensionManager
  */
 
 $specialPageAliases = [];

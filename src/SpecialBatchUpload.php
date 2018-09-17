@@ -3,7 +3,7 @@
  * File containing the SpecialBatchUpload class
  *
  * @copyright (C) 2016 - 2017, Stephan Gambke
- * @license   GNU General Public License, version 2 (or any later version)
+ * @license       GNU General Public License, version 2 (or any later version)
  *
  * This software is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -19,7 +19,7 @@
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  *
  * @file
- * @ingroup SimpleBatchUpload
+ * @ingroup       SimpleBatchUpload
  */
 
 namespace SimpleBatchUpload;
@@ -43,22 +43,11 @@ class SpecialBatchUpload extends SpecialPage {
 	}
 
 	/**
-	 * Under which header this special page is listed in Special:SpecialPages
-	 * See messages 'specialpages-group-*' for valid names
-	 * This method defaults to group 'other'
-	 *
-	 * @return string
-	 */
-	protected function getGroupName() {
-		return 'media';
-	}
-
-	/**
 	 * @param null|string $subpage
+	 *
 	 * @throws \MWException
 	 */
 	public function execute( $subpage ) {
-
 		$this->setHeaders();
 		$this->checkPermissions();
 
@@ -71,6 +60,17 @@ class SpecialBatchUpload extends SpecialPage {
 	private function addPageContentToOutput( $subpage ) {
 		$renderer = new UploadButtonRenderer();
 		$renderer->renderSpecialPage( $this, $subpage );
+	}
+
+	/**
+	 * Under which header this special page is listed in Special:SpecialPages
+	 * See messages 'specialpages-group-*' for valid names
+	 * This method defaults to group 'other'
+	 *
+	 * @return string
+	 */
+	protected function getGroupName() {
+		return 'media';
 	}
 
 }
